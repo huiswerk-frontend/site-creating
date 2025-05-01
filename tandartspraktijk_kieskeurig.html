@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tandartspraktijk KiesKeurig</title>
+    </head>
+      <body>
+        <h1>Tandartsafspraak</h1>
+        <p>
+            In ornare interdum congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tellus nibh, eleifend sit amet neque et, pellentesque dictum purus. Sed a justo nec nulla tempus gravida. Maecenas varius metus commodo lectus ultrices convallis. Cras pretium bibendum justo, tempus vestibulum nisl faucibus eget. Ut risus est, vehicula eget hendrerit a, fermentum in ex.
+        </p>
+          <br>
+            <img src="pics/blauwe-tandartsstoel.jpg" alt="een blauwe tandartsstoel in een behandelkamer" width="300">
+            <img src="pics/tandarts_en_patient.jpg" alt="tandarts met een lachende patient in de tandartsstoel" width="300">
+            <img src="pics/tandarts_met_gebit.jpg" alt="tandarts met gebit in hand en patient" width="300">
+             <br><br>
+              <form method="post" action="https://formspree.io/f/xeoerqbl">
+                <fieldset>
+                  <legend><b>Contactgegevens</b></legend>
+                  <label for="naam">Naam</label>
+                  <input id="naam" type="text" name="naam" required>
+                    <br><br>
+                      <label for="adres">Adres</label>
+                      <input id="adres" type="text" name="adres">
+                        <br><br> 
+                          <label for="postcode">Postcode</label>
+                          <input id="postcode" type="text" name="postcode">
+                            <br><br>
+                              <label for="woonplaats" >Woonplaats</label>
+                              <input id="woonplaats" type="text" name="woonplaats">
+                                <br><br>
+                                  <label for="telefoonnummer">Telefoonnummer</label>
+                                  <input id="telefoonnummer" type="tel" telefoonnummer/> 
+                                    <br><br>
+                                      <label for="">e-mailadres</label>
+                                      <input id="email" type="email" name="email" /> 
+                                        <br><br>
+              </fieldset>
+                <fieldset>
+                    <legend><b>Wat zijn uw klachten</b></legend>
+                      <label for="pijn">Heeft u pijn</label>
+                      <input type="checkbox" name="pijn" value="ja"/>ja
+                      <input type="checkbox" name="pijn" value="nee"/>nee 
+                        <br><br>
+                          <label for="pijnplek">Waar zit de pijn</label>
+                          <select name="pijnplek">
+                          <option value="linksboven">Boven links</option>
+                          <option value="middenboven">Boven midden</option>
+                          <option value="rechtsboven">Boven rechts</option>
+                          <option value="linksonder">Onder links</option>
+                          <option value="middenonder">Onder midden</option>
+                          <option value="recgtsonder">Onder rechts</option>
+                          </select> 
+                            <br><br>
+                              <label for="foto">Voeg een foto toe</label>
+                              <input id="foto" type="file" name="foto">
+                  </fieldset>
+                    <fieldset>
+                      <legend><b>Toelichting</b></legend>
+                      <label for="toelichting">Beschrijf uw klachten</label>
+                        <br>
+                          <textarea id="toelichting" name="toelichting" rows="10" cols="50" maxlength="1500"></textarea>
+                            <br><br>
+                              <label for="datum">Kies uw datum</label>
+                              <input type="date" name="datum" max="2080-31-21"/>
+                    </fieldset>
+                            <input type="submit" value="verzenden"/> 
+              </form>
+      </body>       
+</html>
